@@ -1,8 +1,8 @@
-import camping2 from "../assets/camping2.svg";
+import camping2 from "../../assets/camping2.svg";
 const Home = () => {
-	const platform = new URL("../assets/platforms.png", import.meta.url);
-	const review = new URL("../assets/reviews.png", import.meta.url);
-	const guidelines = new URL("../assets/guidelines.png", import.meta.url);
+	const platform = new URL("../../assets/platforms.png", import.meta.url);
+	const review = new URL("../../assets/reviews.png", import.meta.url);
+	const guidelines = new URL("../../assets/guidelines.png", import.meta.url);
 
 	return (
 		<div className="home">

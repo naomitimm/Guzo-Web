@@ -1,0 +1,82 @@
+.home {
+	margin: 0 2em;
+	height: 100vh;
+}
+
+.main-landing {
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	border: 0.1px solid #66ddaa;
+	border-radius: 30px;
+	padding: 10px;
+	margin-top: 7rem;
+}
+
+.landing {
+	display: flex;
+	height: 70vh;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.home p {
+	margin: 0.3em 1em;
+}
+
+.graphical img {
+	height: 70vh;
+	width: 100%;
+}
+
+.graphical {
+	flex: 2;
+}
+
+.textual {
+	flex: 1;
+	margin-top: 4em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 80%;
+}
+
+.textual .action-btn {
+	width: 40%;
+	height: 3rem;
+	background-color: #00755e;
+	border: none;
+	color: white;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+.textual .action-btn:hover {
+	background-color: white;
+	color: #00755e;
+	border: 1px solid #00755e;
+	box-shadow: 1px 3px 5px #00755e;
+}
+
+.main-landing .info {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.info .info-content {
+	height: 3.5rem;
+	width: 20rem;
+	margin: 0 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1em;
+}
+
+.info-content img {
+	height: 3.5rem;
+}
