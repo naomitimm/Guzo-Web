@@ -1,8 +1,13 @@
+import { useState } from "react";
 import camping2 from "../../assets/camping2.svg";
+import "./home.css";
 import InfoContent from "../../components/info-content/InfoContent";
 import PromptItem from "../../components/prompt-item/PromptItem";
+import SearchResult from "../../components/search-result/SearchResult";
 import SearchBar from "../../components/searchbar/SearchBar";
 const Home = () => {
+	const [countries, setCountries] = useState([]);
+
 	return (
 		<div className="home">
 			<div className="main-landing">
@@ -31,7 +36,8 @@ const Home = () => {
 				<PromptItem />
 			</div>
 			<div className="searchbar">
-				<SearchBar />
+				<SearchBar setCountries={setCountries} />
+				<SearchResult countries={countries} />
 			</div>
 		</div>
 	);

@@ -9,9 +9,16 @@
 }
 
 .content {
-	min-height: 100vh;
+	margin-bottom: 15rem;
+	padding-bottom: 15rem;
 }
 
 h2 {
 	font-size: 2em;
+}
+
+.App {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }

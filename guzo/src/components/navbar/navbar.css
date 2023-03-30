@@ -32,6 +32,7 @@
 
 .links {
 	display: flex;
+	align-items: center;
 }
 
 .links a {
@@ -58,4 +59,24 @@
 	color: black;
 	font-weight: bolder;
 	text-decoration: underline;
+}
+
+.links button {
+	border-radius: 1rem;
+	width: 8rem;
+	height: 2.3rem;
+	border: none;
+	background-color: #00755e;
+	color: white;
+	font-size: 0.9em;
+	font-weight: bolder;
+}
+
+.active .links button {
+	background-color: white;
+	color: #00755e;
+}
+
+.links button:hover {
+	cursor: pointer;
 }

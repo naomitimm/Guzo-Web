@@ -1,4 +1,5 @@
 import { infoContentModel } from "./info-content-model";
+import "./info-content.css";
 const InfoContent = () => {
 	return (
 		<div className="info-container">

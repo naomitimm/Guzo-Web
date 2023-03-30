@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "./navbar.css";
 const NavBar = () => {
 	const [navbar, setNavbar] = useState(false);
 	const changeBackground = () => {
@@ -24,7 +25,9 @@ const NavBar = () => {
 				<Link t o="/review">
 					Review
 				</Link>
-				<Link to="/profile">Profile</Link>
+				<Link to="/profile">
+					<button>SignUp</button>
+				</Link>
 			</div>
 		</nav>
 	);

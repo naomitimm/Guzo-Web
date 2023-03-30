@@ -1,7 +1,40 @@
 .searchbar {
 	display: flex;
 	flex-direction: column;
-	margin: auto;
 	align-items: center;
 	min-width: 50vw;
+}
+
+.input-wrapper {
+	background-color: white;
+	width: 60%;
+	border-radius: 10px;
+	height: 3.5rem;
+	padding: 0 0.5rem;
+	box-shadow: 0px 0px 8px #ddd;
+	margin: 0.5rem 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.input-wrapper input {
+	background: transparent;
+	border: none;
+	height: 100%;
+	font-size: 1em;
+	width: 100%;
+	margin-left: 5px;
+}
+
+.input-wrapper button {
+	font-size: 1em;
+	background-color: #00755e;
+	color: white;
+	padding: 0.6em 0.8em;
+	border: none;
+	border-radius: 1.5em;
+}
+
+.input-wrapper input:focus {
+	outline: none;
 }
