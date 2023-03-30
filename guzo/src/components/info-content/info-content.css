@@ -1,0 +1,25 @@
+.info .info-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.info .info-content {
+	height: 3.5rem;
+	width: 20rem;
+	margin: 0 5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1em;
+}
+
+.info-content img {
+	height: 3.5rem;
+}
+
+.info-content p {
+	margin: 0.3em 1em;
+}

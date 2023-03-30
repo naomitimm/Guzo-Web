@@ -1,9 +1,8 @@
 import camping2 from "../../assets/camping2.svg";
+import InfoContent from "../../components/info-content/InfoContent";
+import PromptItem from "../../components/prompt-item/PromptItem";
+import SearchBar from "../../components/searchbar/SearchBar";
 const Home = () => {
-	const platform = new URL("../../assets/platforms.png", import.meta.url);
-	const review = new URL("../../assets/reviews.png", import.meta.url);
-	const guidelines = new URL("../../assets/guidelines.png", import.meta.url);
-
 	return (
 		<div className="home">
 			<div className="main-landing">
@@ -25,19 +24,14 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="info">
-					<div className="info-content">
-						<img src={review} alt="review icon" />
-						<p>Reliable Reviews</p>
-					</div>
-					<div className="info-content">
-						<img src={platform} alt="review icon" />
-						<p>Access From Any Platform</p>
-					</div>
-					<div className="info-content">
-						<img src={guidelines} alt="review icon" />
-						<p>Guides & Community</p>
-					</div>
+					<InfoContent />
 				</div>
+			</div>
+			<div className="graphical-prompt">
+				<PromptItem />
+			</div>
+			<div className="searchbar">
+				<SearchBar />
 			</div>
 		</div>
 	);

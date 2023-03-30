@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./components/navbar/navbar.css";
+import "./components/info-content/info-content.css";
+import "./components/prompt-item/prompt-item.css";
+import "./components/searchbar/search-bar.css";
 import "./pages/home/home.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -12,8 +15,4 @@ root.render(
 		<App />
 	</React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
