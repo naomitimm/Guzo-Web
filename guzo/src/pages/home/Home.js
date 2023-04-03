@@ -14,7 +14,7 @@ const Home = () => {
 				<div className="landing">
 					<div className="textual">
 						<div className="text">
-							<h2>Travel to any corner of the world</h2>
+							<h1>Travel to any corner of the world</h1>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
 								nemo quibusdam laudantium tempore sit eius, autem illum quos

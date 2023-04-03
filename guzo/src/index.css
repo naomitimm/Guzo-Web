@@ -5,20 +5,23 @@
 	margin: 0;
 	font-family: "Quicksand";
 	color: #333;
-	box-sizing: border-box;
+	padding: 0;
 }
 
 .content {
-	margin-bottom: 15rem;
-	padding-bottom: 15rem;
+	min-height: 100vh;
+	min-width: 100vw;
+	margin: 7rem 0rem;
 }
 
-h2 {
+h1 {
 	font-size: 2em;
 }
 
 .App {
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
+	min-width: 100vw;
+	box-sizing: border-box;
 }
