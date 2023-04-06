@@ -1,0 +1,32 @@
+.image-grid {
+	width: 100%;
+	height: 45vh;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(4, 1fr);
+	margin-inline: auto;
+	margin-bottom: 2rem;
+}
+
+.image-grid img {
+	width: 100%;
+}
+
+.image:last-child {
+	background-color: #7ae3ce !important;
+	grid-column-start: 4;
+	grid-row: 1/3;
+}
+
+.image:first-child {
+	background-color: #37c8ab;
+}
+
+.span-2 {
+	grid-column: span 2;
+}
+
+.image {
+	border-radius: 2rem;
+	background-color: #00755e;
+}

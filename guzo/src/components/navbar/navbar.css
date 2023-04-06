@@ -38,12 +38,11 @@
 .links a {
 	padding: 0 2rem;
 	font-size: 1.1rem;
-	font-weight: bolder;
+	font-weight: 500;
 }
 
 .links a:hover {
 	color: #00755e;
-	font-weight: bolder;
 	text-decoration: underline;
 }
 
@@ -57,7 +56,6 @@
 
 .active .links a:hover {
 	color: black;
-	font-weight: bolder;
 	text-decoration: underline;
 }
 
@@ -69,7 +67,7 @@
 	background-color: #00755e;
 	color: white;
 	font-size: 0.9em;
-	font-weight: bolder;
+	font-weight: 600;
 }
 
 .active .links button {

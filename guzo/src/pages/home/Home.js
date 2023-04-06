@@ -5,6 +5,8 @@ import InfoContent from "../../components/info-content/InfoContent";
 import PromptItem from "../../components/prompt-item/PromptItem";
 import SearchResult from "../../components/search-result/SearchResult";
 import SearchBar from "../../components/searchbar/SearchBar";
+import RecentSearches from "../../components/recent-searches/RecentSearches";
+import ExploreCards from "../../components/explore-cards/ExploreCards";
 const Home = () => {
 	const [countries, setCountries] = useState([]);
 
@@ -28,17 +30,20 @@ const Home = () => {
 						<img src={camping2} alt="" />
 					</div>
 				</div>
-				<div className="info">
-					<InfoContent />
-				</div>
+
+				<InfoContent />
 			</div>
-			<div className="graphical-prompt">
-				<PromptItem />
-			</div>
+
+			<PromptItem />
+
 			<div className="searchbar">
 				<SearchBar setCountries={setCountries} />
 				<SearchResult countries={countries} />
 			</div>
+			<RecentSearches />
+			<ExploreCards spanned="Popular" normal="Destinations" />
+			<ExploreCards spanned="Historical" normal="Sights" />
+			<ExploreCards spanned="Desert" normal="Regions" />
 		</div>
 	);
 };

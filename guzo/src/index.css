@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Quicksand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Quicksand:wght@400;500;600;700&display=swap");
 
 * {
 	margin: 0;
 	font-family: "Quicksand";
-	color: #333;
 	padding: 0;
+	color: black;
 }
 
 .content {
@@ -16,6 +16,12 @@
 
 h1 {
 	font-size: 2em;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 1.7em;
+	font-weight: 600;
 }
 
 .App {

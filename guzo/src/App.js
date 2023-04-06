@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
 import CountryDetails from "./pages/country-details/CountryDetails";
-import { useEffect } from "react";
+import AuthPage from "./pages/auth/signup/AuthPage";
 
 function App() {
 	return (
@@ -18,10 +18,7 @@ function App() {
 							path="/country/:countryName"
 							element={<CountryDetails />}
 						/>
-						{/* <Route exact path="/travel" Component={Home} />
-						<Route exact path="/favorites" Component={Home} />
-						<Route exact path="/review" Component={Home} />
-						<Route exact path="/profile" Component={Home} /> */}
+						<Route exact path="/signup" element={<AuthPage />} />
 					</Routes>
 				</div>
 				<Footer />

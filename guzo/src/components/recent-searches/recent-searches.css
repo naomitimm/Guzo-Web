@@ -1,0 +1,21 @@
+/* .recent-searches {
+	border: 1px solid black;
+	margin-top: 2rem;
+	height: 20vh;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
+.recent-container {
+	height: 15vh;
+	background-color: black;
+	margin: 1rem 1rem;
+	width: 10vw;
+	scroll-snap-align: center;
+} */
+
+.recent-searches {
+	border: 1px solid black;
+	margin-top: 2rem;
+	height: 20vh;
+}

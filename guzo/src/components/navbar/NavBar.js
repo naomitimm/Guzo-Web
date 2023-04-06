@@ -25,7 +25,7 @@ const NavBar = () => {
 				<Link t o="/review">
 					Review
 				</Link>
-				<Link to="/profile">
+				<Link to="/signup">
 					<button>SignUp</button>
 				</Link>
 			</div>
