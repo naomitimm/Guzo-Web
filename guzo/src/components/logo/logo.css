@@ -1,0 +1,9 @@
+.appHeadline {
+	font-family: "Dancing Script";
+	font-size: 4em;
+	color: #00755e;
+}
+
+.navbar .logo {
+	transition: 0.6s;
+}

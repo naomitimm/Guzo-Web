@@ -69,17 +69,12 @@ const CountryDetails = () => {
 						/>
 						<Essentials
 							title="What to do?"
-							icon={
-								<FontAwesomeIcon
-									icon={faPersonHiking}
-									style={{ color: "#ffffff" }}
-								/>
-							}
+							icon={<FontAwesomeIcon icon={faPersonHiking} />}
 						/>
 
 						<Essentials
 							title="Where to eat?"
-							icon={<FontAwesomeIcon icon={faBowlFood} color="white" />}
+							icon={<FontAwesomeIcon icon={faBowlFood} />}
 						/>
 					</div>
 				</>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./navbar.css";
+import Logo from "../logo/Logo";
 const NavBar = () => {
 	const [navbar, setNavbar] = useState(false);
 	const changeBackground = () => {
@@ -14,10 +15,7 @@ const NavBar = () => {
 	window.addEventListener("scroll", changeBackground);
 	return (
 		<nav className={navbar ? "navbar active" : "navbar"}>
-			<a href="/" className="logo">
-				<h1 className="appHeadline">Guzo</h1>
-			</a>
-
+			<Logo />
 			<div className="links">
 				<Link to="/">Home</Link>
 				<Link to="/travel">Travel</Link>
@@ -25,8 +23,8 @@ const NavBar = () => {
 				<Link t o="/review">
 					Review
 				</Link>
-				<Link to="/signup">
-					<button>SignUp</button>
+				<Link to="/login">
+					<button>Login</button>
 				</Link>
 			</div>
 		</nav>

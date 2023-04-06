@@ -1,0 +1,14 @@
+.social-media svg path {
+	color: #00755e;
+}
+
+.social-media svg {
+	padding: 1.2rem 1.4rem;
+	border: 1px solid #00755e;
+	margin: 1.5rem 1rem;
+	border-radius: 4em;
+}
+
+.social-media .svg-inline--fa {
+	height: 1.5rem;
+}

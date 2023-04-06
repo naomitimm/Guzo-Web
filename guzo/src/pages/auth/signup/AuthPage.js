@@ -1,36 +1,31 @@
 import "./auth.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faFacebookF,
-	faGoogle,
-	faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-
+import AuthSocials from "../../../components/auth-social-media/AuthSocials";
+import Logo from "../../../components/logo/Logo";
 const AuthPage = () => {
 	const [addclass, setaddclass] = useState("");
 	return (
 		<div className="auth">
 			<div className={`container ${addclass}`} id="container">
 				<div className="form-container  sign-up-container">
+					<Logo />
 					<form>
 						<h1>Create Account</h1>
+						<AuthSocials />
+						<p className="option">Or use your email to register</p>
 						<input type="text" placeholder="NAME" />
 						<input type="email" placeholder="EMAIL" />
 						<input type="password" placeholder="PASSWORD" />
-						<button type="submit">REGISTER</button>
+						<button type="submit">SIGNUP</button>
 					</form>
 				</div>
 				<div className="form-container sign-in-container">
+					<Logo />
 					<form>
 						<h1>Login</h1>
-						<div className="social-media">
-							<FontAwesomeIcon icon={faFacebookF} />
-							<FontAwesomeIcon icon={faGoogle} />
-							<FontAwesomeIcon icon={faTwitter} />
-						</div>
-						<p>Or login with email and password</p>
+						<AuthSocials />
+						<p className="option">Or login with email and password</p>
 						<input type="email" placeholder="EMAIL" />
 						<input type="password" placeholder="PASSWORD" />
 						<Link to="">
@@ -43,26 +38,34 @@ const AuthPage = () => {
 					<div className="overlay">
 						<div className="overlay-panel overlay-left">
 							<div className="overlay-actions">
-								<h4>Already have an account?</h4>
+								<h1>Welcome back to Guzo!</h1>
+								<h3>
+									You've been missed. Keep connected with us by logging in to
+									your account.
+								</h3>
 								<div className="btn login">
 									<button
 										className="ghost"
 										id="signIn"
 										onClick={() => setaddclass("")}>
-										GO TO LOGIN
+										LOGIN
 									</button>
 								</div>
 							</div>
 						</div>
 						<div className="overlay-panel overlay-right">
 							<div className="overlay-actions">
-								<h4>Don't have an account?</h4>
+								<h1>Welcome to Guzo!</h1>
+								<h3>
+									The world is at your fingertips. Register to start your
+									journey today.
+								</h3>
 								<div className="btn">
 									<button
 										className="ghost"
 										id="signUp"
 										onClick={() => setaddclass("right-panel-active")}>
-										GO TO REGISTER
+										REGISTER
 									</button>
 								</div>
 							</div>
